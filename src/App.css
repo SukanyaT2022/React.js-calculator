@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.wholeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+table {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: lightgray;
+  border-collapse: collapse;
+  /* border collape remove double border to separate border */
+  font-size: 20px;
+}
+/* th is head no 15 */
+th {
+  background-color: darkgray;
+  text-align: right;
+  padding: 20px 40px 20px 0px;
+}
+/* tr is row */
+/* td is column - put padding in td so all small box bigger*/
+td {
+  padding: 20px;
+  border: 2px solid darkgray;
+}
+
+/* target the whold column use nth-child use to target specific cell */
+/* change last colume to orange use last child */
+td:last-child {
+  background-color: darkorange;
+}
+
+/* td:first-child{
+  background-color:green;
+}
+
+td:nth-child(2){
+  background-color:pink;
+} */
+/* target send column use nth-child */
+
+/* also can use first-child or las-child */
+/* target only one row use tr  and nth-child */
+/* tr:nth-child(3){
+background-color: red;
+} */
